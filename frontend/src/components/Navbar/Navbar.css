@@ -1,0 +1,52 @@
+/* Navbar Styles */
+nav {
+    background-color: #1e1e1e;
+    padding: 15px 20px;
+    border-bottom: 2px solid #333;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #333;
+  }
+  
+  nav ul li button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li button:hover {
+    background-color: #333;
+  }
+  
+  nav ul li button:active {
+    background-color: #282828;
+  }
+  
