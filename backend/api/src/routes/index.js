@@ -19,11 +19,9 @@ router.get("/", (req,res)=>{
 router.post("/api/register", validateRegister, register)
 router.post("/api/login", login)
 router.post("/api/logout", logout);
-// Ruta de autenticación para verificar si el usuario está autenticado
 router.get('/authenticate', protectRoute, (req, res) => {
-  // Si el middleware de protección pasa, significa que el usuario está autenticado
   return res.json({
-    user: req.user,  // Aquí pasas los datos del usuario (sin la contraseña)
+    user: req.user,
   });
 });
 //Perfil del usuario
