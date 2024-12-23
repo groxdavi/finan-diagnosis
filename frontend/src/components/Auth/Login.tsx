@@ -14,10 +14,11 @@ const Login: React.FC = () => {
     e.preventDefault();
     try {
       await login({ email, password });
-      const from = (location.state as { from?: { pathname: string } })?.from?.pathname || "/profile";
-      navigate(from);
+    const from = (location.state as { from?: { pathname: string } })?.from?.pathname || '/profile';
+    window.location.reload(); // Recarga la página para actualizar el estado de autenticación
+    navigate(from); // Navega a la página desde donde se intentó acceder
     } catch {
-      setError('Invalid credentials. Please try again.');
+      setError('Escribiste mal tu email o contraseña.Intenta de nuevo.');
     }
   };
 

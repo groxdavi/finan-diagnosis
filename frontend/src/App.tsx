@@ -13,7 +13,7 @@ const App: React.FC = () => {
           <AppRoutes />
         </Router>
         </DiagnosisProvider>
-    </AuthProvider>
+        </AuthProvider>
   );
 };
 

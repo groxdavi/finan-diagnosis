@@ -5,13 +5,14 @@ import "./Navbar.css"
 
 
 const Navbar: React.FC = () => {
-  const { user, logout } = useAuth();
+  const { logout,user } = useAuth();
   const navigate = useNavigate();
 
   const handleLogout = () => {
     logout();
     navigate('/login');
   };
+
 
   return (
     <nav>
