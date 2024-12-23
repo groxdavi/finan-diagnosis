@@ -15,8 +15,8 @@ const Login: React.FC = () => {
     try {
       await login({ email, password });
     const from = (location.state as { from?: { pathname: string } })?.from?.pathname || '/profile';
-    window.location.reload(); // Recarga la página para actualizar el estado de autenticación
-    navigate(from); // Navega a la página desde donde se intentó acceder
+    window.location.reload();
+    navigate(from);
     } catch {
       setError('Escribiste mal tu email o contraseña.Intenta de nuevo.');
     }

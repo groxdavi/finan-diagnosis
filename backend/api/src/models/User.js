@@ -32,8 +32,6 @@ const userSchema = new mongoose.Schema(
 		timestamps: true,
 	}
 );
-
-// Pre-save hook to hash password before saving to database
 userSchema.pre("save", async function (next) {
 	if (!this.isModified("password")) return next();
 

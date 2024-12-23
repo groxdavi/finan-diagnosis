@@ -28,7 +28,6 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   const login = async (credentials: { email: string; password: string }) => {
     const userData = await authLogin(credentials.email, credentials.password);
-    console.log('User logged in:', userData); // Debugging statement
     setUser(userData.user);
   };
 

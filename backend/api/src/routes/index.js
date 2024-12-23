@@ -12,7 +12,7 @@ import { createDiagnosis, deleteDiagnosis, getDiagnosticHistory } from "../contr
 const router = Router();
 
 router.get("/", (req,res)=>{
-    res.send("Backend By David")
+    res.send("Backend")
 })
 
 //autenticar
